@@ -1,0 +1,55 @@
+<!-- [ 09.16 필기 : 첫 frontend 수업 (๑•̀ㅂ•́)و✧ ]
+- HTML(Hyper Text Markup Language) : 웹을 이루는 가장 기초적인 구성요소. 웹으 뼈대 !!
+- CSS(Cascading Style Sheets): 화면을 꾸며주는 스타일 시트 언어
+- JavaScript : 웹의 동적 처리를 담당. 페이지를 동적으로 꾸며주는 역할을 하는 언어
+- React : 자바스크립드로 만든 라이브러리. SPA를 기본으로하며 Virtual DOM을 활용
+- SPA(Single Page Application) : 서버로부터 완저한 새 페이지를 불러오지 않고 현재 페이지를 동적으로 다시 작성함.
+- DOM(Document Object Model) : 돔트리를 통해 모든 요소를 정의하고 요소에 접근하는 방법을 제공함.
+- SSR(Server Side Rendering) : 서버로부터 완전하게 만들어진 htmp 파일을 받아와 페이지 전체를 렌더링하는 방식
+- CSR(Client Side Rendering) : 사용자의 요청에 따라 필요한 부분만 응답받아 렌더링 하는 방식
+
+<< HTML 필수 태그 >>
+- h(heading) : 제목을 표현할 수 있는 다양한 크기의 h태그 제공(h1~h6 까지 표현 가능)
+- p(Paragraph) : 단락, 내용상 끊어서 구분하는 문단으로 줄바꿈 시 줄간격이 자동으로 삽입된다.
+- br(Break) : 줄바꿈(간격이 생기지 않는다.)
+- blockquote(block quotation) : 블록 인용구를 표현하여 들여쓰기를 하여 별도의 단락으로 구분한다.
+- q(quotation) : 짧은 인용구를 표현하여 자동으로 앞뒤에 큰따옴표가 붙는다.
+- b(bold) : 볼드처리(화면상)
+- strong : 볼드처리 (강조하여 읽어준다는 의미로 세게 읽어주는 웹접근성을 준다.)
+- i(itelic) : 이텔릭체(기울임꼴) - 단순히 글씨가 이텔릭체
+- em(emphasize) : 이텔릭체 + 강조의 의미
+- hr(horizontal rule) : 수평 가로 구분선
+- ins : 새로 추가된 텍스트(밑줄이 표시됨)
+- del : 기존에 있는 텍스트가 삭제된 텍스트(취소선이 표시됨)
+- sub : 아래 첨자 표시 (주로 원소 기호 표현)
+- sup : 위 첨자 표시 (지수 표기)
+
+<< HTML의 공간 분할 : div 태그와 span 태그로 수행 >>
+HTML 요소의 타입은 display 속성값으로 1. block 블록 2. inline 인라인 중 하나를 갖는다.   
+① block 요소 : 새로운 라인에서 시작하여 해당 라인의 전체 너비를 차지한다. <p, div, h, ul, ol, form>
+    ↪ div(division) 태그는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록(block) 요소이다. 
+② inline 요소 : 해당 HTML 요소의 내용 만큼의 너비만 차지한다.<span, a, img>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: rgb(176, 104, 243);
+                color: blanchedalmond;
+                text-align:center;">
+        <p>영화 소개</p>
+        <p>영화를 소개하는 페이지 입니다.</p>
+    </div>
+    <p>
+        <span style="border: 3px solid red"> 
+        span 태그의 display 속성값은 인라인 속성이다.
+    </span> 
+    줄바꿈 없이 문장이 이어져서 표시된다능
+    </p>
+</body>
+</html>

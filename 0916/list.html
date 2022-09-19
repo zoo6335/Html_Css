@@ -1,0 +1,60 @@
+<!-- 
+<<HTML 리스트>>
+1. 순서가 없는 리스트(unordered list) : ul 태그
+2. 순서가 있는 리스트(ordered list) : ol 태그
+3. 정의 리스트(definition list) : dl 태그
+    > li*3 하면 리스트가 3개 생성됨.
+    - dl(definition list) : 용어를 설명하는 목록을 만든다.
+    - dt(definition term) : 정의되는 용어의 제목을 넣는다.
+    - dd(definition description) : 정의된 용어를 설명하는데 사용한다.
+
+<<링크와 이미지 넣기>>
+1. 링크 : 문서와 문서 간 연결을 의미하며 a(anchor) 태그를 사용
+    (a태그는 기본적으로 밑줄이 걸려있다.)
+
+<a href="대상 경로" target="링크 연결 방식" title="링크 설명"></a>
+
+target 의 속성
+    _blank : 링크로 연결된 문서를 새창이나 새 탭에서 오픈
+    _self : 링크로 연결된 문서를 현재 frame에서 오픈 (기본값)
+    _parent : 링크로 연결된 문서를 부모 frame에서 오픈
+    _top : 링크로 연결된 문서를 현재 창의 가장 상위 프레임에서 오픈 
+    프레임 이름 : 링크로 연결된 문서를 지정된 프레임에서 오픈
+대상의 이동경로가 명확하지 않을 때 : <a href="#">링크</a>
+
+절대주소
+상대주소
+
+2. 사진 : img 태그 사용
+    - JPEG 이미지
+    - GIF 이미지
+    - PNG 이미지
+    - SVG 이미지
+<img src=”이미지 경로" alt=”이미지 설명">
+- src 속성 : 삽입하려는 이미지의 경로를 입력하는 속성입니다.
+     ./ 현재 폴더 (생략 가능)
+    ../ 상위 폴더
+- alt 속성 : 삽입한 이미지 객체를 설명하는 텍스트를 넣음.
+이미지링크 : img 태그를 a 태그 안에 사용하면 이미지를 클릭 했을 때 특정 링크로 이동하게 할 수 있습니다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link 만들기</title>
+    <style>
+        img{
+            width: 200;
+            height: 200;
+            border: 2px solid royalblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://google.co.kr" target="_blank">
+        <img src="./images/google_logo.png" alt="사즨이 나와야 합니당">
+    </a>
+
+</body>
+</html>

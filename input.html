@@ -1,0 +1,121 @@
+<!-- 09.19 <<HTML 입력 양식-이어서>>
+- 라디오타입 : 여러 항목중 하나만 선택하도록 한다.
+- checkbox 타입 : 
+- name 속성 : 입력요소의 이름을 작성한다.
+- value 속성 : 입력 요소의 초기값을 작성한다. 
+- label 태그 : form 태그 안에서 사용하는 요소에 이름을 붙일 때 사용한다. 
+
+# fieldset과 legend 태그
+fieldset : <form> 요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용, 그룹별로 박스 모양의 테두리가 생긴다.
+legend : <fieldset> 요소의 캡션(caption)을 정의할 때 사용
+
+# textarea 태그 : 사용자가 여러 줄의 텍스트를 입력할 수 있는 텍스트 입력 영역을 정의할 때 사용
+여러 줄의 입력 요소를 생성할 때는 input 태그가 아닌 textarea 태그를 사용 합니다.
+
+텍스트 입력 영역의 크기는 <textarea> 요소의 cols 속성과 rows 속성으로 지정할 수 있으며, 
+CSS에서 height 속성과 width 속성을 사용하면 더욱 손쉽게 지정할 수 있습니다.
+
+# select, option, optgroup 태그
+select 태그를 사용하면 콤보 박스를 생성 할 수 있습니다.
+콤보 박스에 항목 하나를 추가할 때는 option 태그를 사용하고, 
+항목들을 그룹으로 묶고 싶다면 optgroup 태그를 사용 합니다.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method = "get"> 
+        <fieldset>
+            <legend>기본 정보</legend>
+            <p>
+                <label for="id">아이디</label>
+                <input type="text" name="id" id="id" value="zoo6335">
+            </p>    
+            <p>  
+                <label for="password"> 패스워드</label>
+                <input type="password" name="pwd" id="password">
+            </p> 
+        </fieldset>
+        <fieldset>
+            <legend>세부 정보</legend>
+            <p>
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email" placeholder="@를 넣으셈">
+            </p>  
+            <p>
+                <label for="tel">전화번호</label>
+                <input type="tel" name="tel" id="tel" placeholder="하이픈을 넣지 마셈">
+            </p>
+            <p>
+                <label for="age">나이</label>
+                <input type="number" name="addr" id="age">
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>주소 입력</legend>
+            <label for="city">도시</label>
+            <select name="city" id="city">
+                <optgroup label="서울시">
+                    <option value="강남구">강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="강동구">강동구</option>
+                    <option value="영등포구">영등포구</option>
+                    <option value="용산구">용산구</option>
+                    <option value="중구">중구</option>
+                    <option value="강북구">강북구</option>
+                </optgroup>
+                <optgroup label="경기도">
+                    <option value="성남시">성남시</option>
+                    <option value="수원시">수원시</option>
+                    <option value="용인시">용인시</option>
+                    <option value="안양시">안양시</option>
+                    <option value="화성시">화성시</option>
+                    <option value="과천시">과천시</option>
+                </optgroup>
+            </select>
+        </fieldset> 
+        <fieldset>
+            <legend>성별</legend>
+            <p>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" id="male"></input>
+                <label for="female">여성</label>
+                <input type="radio" name="gender" id="female"></input>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>직업</legend>
+            <p>
+                <label for="student">학생</label>
+                <input type="radio" name="jobs" id="student">
+                <label for="worker">회사원</label>
+                <input type="radio" name="jobs" id="workloer">
+                <label for="housewife">주부</label>
+                <input type="radio" name="jobs" id="housewife">
+                <label for="none">무직</label>
+                <input type="radio" name="jobs" id="none">
+            </p>
+        </fieldset>
+        
+        <p>가입일<input type="date"></p>
+        <label for="desc">소개글</label>
+        <p>
+           <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        </p>
+        
+        <button type="submit">
+            <img src="/images/펭귄.jpg" width="30" alt="나">제출해
+        </button>
+        <button type="reset">
+            <img src="/images/해골스.jpg" width="30" alt="해골">초기화해    
+        </button>
+    </form>
+</body>
+</html>
