@@ -1,0 +1,28 @@
+body{
+    font-family: "맑은 고딕", "Nanum Gothic", sans-serif;
+}
+.parent {
+    font-size: 30px;
+    color: crimson;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: overline;
+}
+.child {
+    font-size: 0.8em;   /* 부모 글꼴의 80% */
+    font-weight: bold;
+    color: rgba(25, 0, 200, .9);
+    background-image: url("/images/healing.jpg")
+}
+.child:hover{
+    color: darkred;
+}
+.child-to-child{
+    font-size: 0.8rem;  /* html의 80% */
+}
+.variant{
+    font-variant: small-caps;
+}
+a {
+    text-decoration: none;
+}
