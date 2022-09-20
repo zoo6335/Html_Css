@@ -1,0 +1,41 @@
+
+<!-- 
+- id 속성값은 #으로 접근
+- class는 .찍고 클래스명으로 접근
+
+CSS 적용하기
+1. 인라인 스타일 : html태그에서 사용할 수 있는 style 속성에 css 코드를 작성하는 방법
+태그에 직접 CSS 코드를 작성하는 방식이라서 CSS 의 기본 문법 형식에서 **선택자 부분이 필요 없습니다.**
+<태그 style=”CSS 코드"></태그>
+2. 내부 스타일 시트 : html 파일 내수벵 css 코드를 작성
+style 태그를 사용하는 위치는 정해진 기준이 없지만, 보통 head 태그안에 사용 합니다.
+head 태그에 CSS를 작성하면 body 태그에 작성된 내용이 사용자에게 노출되기 전에 CSS를 불러와 빠르게 디자인을 적용할 수 있는 장점이 있습니다. 그러나 웹 브라우저에서 HTML 문서를 해설 할 때 마다 CSS 코드를 매번 다시 읽기 때문에 성능상으로는 좋지 못하다는 단점이 존재 합니다.
+3. 외부 스타일 시트 : css코드를 작성하는 별도 파일을 만들어 html문서와 css를 연결하는 방법
+파일의 확장자는 CSS 여야 합니다.
+별도로 작성한 CSS 파일을 HTML 문서에서 연결할 때는 link 태그를 사용 합니다.
+4. 브라우저 기본 스타일 : CSS를 사용하지 않는 웹문서를 의미. 웹브라우저의 기본 스타일을 사용
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 외부 스타일 시트 적용 -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 내부 스타일 시트 적용 */
+        p {
+            background-color: bisque;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- 인라인 스타일 적용 -->
+    <h1 style="color:red; font-size:32px;">레드향</h1>
+    <p>껍질이 어쩌구 저쩌구 짱 !</p>
+    <p>레드향은 한라봉과 귤을 교배해서 만들었따.</p>
+</body>
+</html>

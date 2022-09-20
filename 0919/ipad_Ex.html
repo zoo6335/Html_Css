@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이패드 주문하기 연습문제</title>
+    <style>
+        body{
+            background-image: url(./images/펭귄.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>아이패드 주문하기</h1>
+    <fieldset>
+        <legend><b>배송 정보</b></legend>
+        <p>
+            <b><label for="product width">주문 상품</label></b>
+            <input type="text" name="product" id="product" size="40" value="아이패드 12.9인치" readonly>
+        </p>
+        <p>
+            <b><label for="name">이름 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></b>
+            <input type="text" name="name" id="name" size="40" autofocus>
+        </p>
+        <p>
+            <b><label for="add">배송 주소</label></b>
+            <input type="text" name="add" id="add"  size="40" required>
+        </p>
+        <p>
+            <b><label for="email">이메일&nbsp;&nbsp;&nbsp;&nbsp;</label></b>
+            <input type="email" name="email" id="email" size="40">
+        </p>
+        <p>
+            <b><label for="tel">연락처&nbsp;&nbsp;&nbsp;&nbsp;</label></b>
+            <input type="tel" name="tel" id="tel" size="40" placeholder="하이픈 빼고 입력해주세요.(01012345678)">
+        </p>
+        <p>
+            <b><label for="date">배송 지정</label></b>
+            <input type="date" name="date" id="date"  size="20"> 
+            <b style="font-size: 13px;"> (주문일로부터 최소 3일 이후)</b>
+        </p>
+    </fieldset>
+    <p></p>
+    <center>
+        <button type="submit" style="padding: 10px 30px;">주문하기</button>
+        <button type="reset" style="padding:10px 30px;">취소하기</button>
+    </center>
+
+</body>
+</html>
