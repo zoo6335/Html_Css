@@ -1,0 +1,62 @@
+.img1{
+    border-radius: 500px;
+    border: 5px solid rgb(252, 164, 237);
+    box-shadow: 20px 20px ;
+    width: 300px;
+    height:300px;
+}
+h3{
+    font-size: 1.2em;
+}
+section {
+    width: 800px;
+}
+article {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border:  1px solid #ccc;
+    float: right;
+    font-size: 1.2em;
+}
+footer {
+    clear: both;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 810px;
+    font-size: 1.2em;
+}
+.button {
+    clear: right;
+
+}
+button:hover{
+    background-color: blueviolet;
+}
+button{
+    background-color: hotpink;
+    padding: 0;
+    height: 100px;
+    width: 200px;
+    font-size: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+#p1{
+    background-color: rgb(255, 198, 198);
+}
+#p2{
+    background-image: url(/images/미칭롬.gif);
+    background-size: cover;
+}
+#p3{
+    background-image: url(/images/밥.jpg);
+    background-size: contain;
+}
+#p4{
+    background-color: rgb(202, 164, 238);
+}
