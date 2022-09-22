@@ -1,0 +1,42 @@
+#container{
+    width: 1000px;margin: 20px 10px;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    color: white;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+img {
+    width: 200px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+}
+.caption {
+    position: absolute;
+    top: 200px;
+    width:200px;
+    height:230px;
+    padding-top:20px;
+    background:rgba(29, 44, 94, 0.527);
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+li:hover .caption{
+    opacity: 1;
+    transform: translateY(-200px);
+    
+}
