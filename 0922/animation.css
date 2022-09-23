@@ -49,13 +49,13 @@ div{
     animation-name: move;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    animation-play-state: pauLOOsed;
     animation-iteration-count: infinite;
 
 }
 @keyframes move {
     from {
-        left: 0;;
+        left: 0;
     }
     to {
         left: 300px;

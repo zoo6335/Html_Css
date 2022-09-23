@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box; /* ★중요해★ */
+}
+form {
+    width: 304px;
+    height: 390px;
+    padding: 28px 38px;
+    border: 1px solid black;
+    margin: 100px auto; /* 가로 중앙 정렬 */
+}
+
+.or {
+    font-size: 16px;
+    font: bold;
+    margin: 24px;
+    text-align: center;
+}
+img{
+    width: 10px;
+    height: 10px;
+}
+.google {
+    width: 228px;
+    height: 44px;
+    border: 1px solid black;
+}
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #504444;
+    font-size: 16px;
+}
+#login {
+    margin-top: 10px;
+    width: 228px;
+    height: 44px;
+    background-color: #373f3c;
+    color: #ffffff;
+    border-style: none;
+}
+input{
+    width: 228px;
+    height: 44px;
+    margin-top: 10px;
+    border: 1px solid #afafaf;
+}
+#forgot {
+    margin-top: 10px;
+    width: 228px;
+    height: 44px;
+    color: #373f3c;
+    text-align: center;
+    background-color: #ffffff;
+    border-style: none;
+}
