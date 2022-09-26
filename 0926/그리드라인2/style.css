@@ -1,0 +1,33 @@
+#container {
+    display: grid;
+    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,100px);
+}
+.box {
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    background-color: thistle;
+    grid-column: 1/4;
+}
+.box2 {
+    grid-row: 2/4;
+    background-color: skyblue;
+}
+.box3 {
+    grid-column: 2/4;
+    grid-row-start: 2;
+    background-color: yellowgreen;
+}
+.box4 {
+    grid-row: 3;
+    grid-column: 3;
+    background-color: salmon;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    font-size: 15px;
+}
+#container {
+    display: grid;
+    height: 100vh;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.box {
+    background-color: thistle;
+    box-shadow: 5px 5px 5px rgb(138, 132, 132);
+}
+.box:active {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+.box:hover {
+    background-color: bisque;
+}
