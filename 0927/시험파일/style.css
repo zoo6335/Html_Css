@@ -1,0 +1,40 @@
+* {
+    font-size: 15px;
+}
+label {
+    font:bold
+}
+fieldset {
+    box-sizing: border-box;
+    width: 800px;
+    position: relative;
+}    
+table {
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+}
+tbody {
+    background-color: antiquewhite;
+}
+thead {
+    background-color:rgb(252, 186, 133);
+    color: white;
+    height: 35px;
+    border: 1px solid black;
+}
+tfoot {
+    text-align: center;
+    background-color:rgb(252, 186, 133);
+    color: white;
+}
+td {
+    border: 1px solid black;
+}
+th {
+    border: 1px solid black;
+}
+tr > td:nth-child(3) {
+    width: 80px;
+    text-align: center;
+}
