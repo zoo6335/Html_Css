@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Jua&family=Nanum+Pen+Script&family=Roboto&display=swap');
+
+* {
+    border: 1px solid rgb(70, 70, 69);
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    background-image: url(/images/);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#logo_
+
+.tap{
+
+}
