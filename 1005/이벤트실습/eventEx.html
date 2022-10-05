@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습문제</title>
+    <link rel="stylesheet" href="./eventEx.css">
+</head>
+<body>
+    <button class="bt1" id="pink" onclick="alert('버튼을 클릭했습니다 !'), changeColor('pink')">pink</button>
+    <button class="bt1" id="purple" onclick="alert('버튼을 클릭했습니다 !'), changeColor('mediumorchid')">purple</button>
+    <button class="bt1" id="skyblue" onclick="alert('버튼을 클릭했습니다 !'), changeColor('skyblue')">skyblue</button>
+    <div class="box">클릭된 버튼과 같은 색이 입혀집니당</div>
+    
+    <hr>
+    
+    <img src="/images/lsp.gif" alt="lsp">
+
+    <div class="lsp">
+        <button id="btOpen" onclick="openInfo()">상세 설명 열기</button>
+        <h1>Lumpy Space Princess</h1>
+        <p>'덩어리 세계(Lumpy Space)'의 공주로, 본국인 덩어리 세계는 
+            애니메이션의 주된 배경이 되는 우 랜드가 아닌 다른 차원의 존재다. 그러나 차원을 
+            연결하는 포탈을 통해 양쪽 세계를 넘나들며 살고 있는 듯하다.
+            히로인인 버블검 공주와는 가장 친한 친구라고 한다. 그래서인지 버블검 공주가 있는
+                곳에 함께 있는 경우가 상당히 많다. 또한 주인공인 핀과 제이크의 친구이기도 하다.</p>
+        <button id="btHide" onclick="hideInfo()">상세 설명 닫기</button>
+    </div>
+    
+    
+    <script>
+        function changeColor(color) {
+            let box = document.querySelector(".box");
+            box.style.backgroundColor = color;
+        }
+        function openInfo() {
+            document.querySelector("h1").style.display = "block";
+            document.querySelector("p").style.display = "block";
+            document.querySelector("#btHide").style.display = "block";
+            document.querySelector("#btOpen").style.display = "none";
+        }
+        function hideInfo() {
+            document.querySelector("h1").style.display = "none";
+            document.querySelector("p").style.display = "none";
+            document.querySelector("#btHide").style.display = "none";
+            document.querySelector("#btOpen").style.display = "block";
+        }
+    </script>
+</body>
+</html>

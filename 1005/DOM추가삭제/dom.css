@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Jua&family=Nanum+Pen+Script&family=Roboto&display=swap');
+* {
+    box-sizing:border-box;
+    font-family: 'Jua', sans-serif;
+}
+body{
+    background-color: thistle;
+}
+#container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+input[type="text"] {  /* input 박스의 속성이 text이면 !*/
+    width: 370px;
+    float: left;
+    height: 30px;
+    padding-left: 30px;
+}
+button {
+    width: 90px;
+    height: 30px;
+    float: right;
+    background-color: steelblue;
+    color: aliceblue;
+    border: none;
+}
+hr {
+    clear: both;
+    display: none;
+}
+ul {
+    list-style: none;
+    padding-top: 50px;
+}
+li {line-height: 2;}
