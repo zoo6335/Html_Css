@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>응</title>
+    <style>
+        body {
+            width: 5000px;
+            height: 5000px;
+        }
+        button:nth-child(1) {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        }
+        button:nth-child(2) {
+            position: fixed;
+            left: 10px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sTo()">scrollTo(100, 200)</button>
+    <button onclick="sBy()">scrollBy(100, 200)</button>
+    
+    <script>
+        function sTo() {
+            window.scrollTo({left:2000, top:200}); // 고정된 좌표로 이동
+        }
+        function sBy() {
+            window.scrollBy({left:100, top:200}); // 상대적 위치로 이동 
+        }
+    </script>
+</body>
+</html>
