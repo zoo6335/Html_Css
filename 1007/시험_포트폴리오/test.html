@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.07 시험 이주연</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <div id="container">
+        <h2>아이디</h2>
+        <input type="text" id="id">
+        <p style="color: red; display: none;" id="idNull">필수 입력 항목 입니다</p>
+
+        <h2>패스워드</h2>
+        <input type="password" id="pw" onclick="pwMessage()">
+        <p id="pwNotion" style="display: none;">영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</p>
+        <p style="color: red; display: none;" id="pwNull">필수 입력 항목 입니다</p>
+        
+        <h2>패스워드 확인</h2>
+        <input type="password" id="pwCheck">
+        <p style="color: red; display: none;" id="pwCheckNull">필수 입력 항목 입니다</p>
+        
+        <h2 onclick="isEmpty()">이메일</h2>
+        <div><input type="text" class="email" onclick="isEmpty()">@ 
+            <input type="text" class="email" onclick="isEmpty()"></div><br>
+        
+        <h2>주소</h2>
+        <div><input type="text" class="addr" onclick="isEmpty()"><br>
+            <input type="text" class="addr" onclick="isEmpty()"></div><br>
+        
+        <button style="align-self: center;">가입</button> 
+    </div>
+    <script src="./test.js"></script>
+</body>
+</html>
