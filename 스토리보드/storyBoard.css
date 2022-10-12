@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Jua&family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@200;300;400;700;900&display=swap');
 * {
-    border: 1px solid rgb(194, 194, 194);
+    border: 0.5px solid rgb(194, 194, 194);
     font-family: 'Gowun Batang', serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 body{
-    padding-top: 170px;
+    padding-top: 160px;
 }
+/* view 사이즈 취소 */
 .container{
-
     height: 100vh;
     width: 100vw;
     color: thistle;
@@ -33,6 +33,15 @@ header{
     display: flex;
     border: none;
 }
+#login {
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    margin-right: 15px;
+}
+#signIn {
+    border: none;
+    border-bottom: 1px solid aliceblue;
+}
 #logo{
     border: none;
     width: 20vw;
@@ -48,6 +57,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.tap:hover {
+    background-color: aliceblue;
+    color:black
 }
 .tap {
     width: 20vw;
